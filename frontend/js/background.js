@@ -11,7 +11,7 @@ catch (e) {
 
 function fetchLive(callback) {
 
-    fetch('https://raw.githubusercontent.com/fr3dd33/MALDETECTOR/blob/master/static/classifier.json')
+    fetch('https://raw.githubusercontent.com/fr3dd33/MALDETECTOR/master/static/classifier.json')
         .then(response => response.json())
         .then(data => {
             chrome.storage.local.set({ cache: data, cachetime: Date.now() }, function () {
