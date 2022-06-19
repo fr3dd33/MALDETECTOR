@@ -1,0 +1,19 @@
+{
+  "name": "MalDetector",
+  "version": "1.0.0",
+  "description": "A malicious content detector plugin",
+  "permissions": [ "activeTab", "declarativeContent", "storage", "webNavigation" ],
+  "background": {
+    "service_worker": "js/background.js" 
+  },
+  "action": {
+    "default_popup": "plugin_ui.html"
+  },
+  "content_scripts":[
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js": ["js/jquery.js","js/features.js"]
+    }
+  ],
+  "manifest_version": 3
+}

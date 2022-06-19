@@ -1,0 +1,8 @@
+**/*.npy
+**/.ipynb_checkpoints
+**/__pycache__/
+**/*.pem
+**/*.crx
+.vs
+artifacts
+MALICIOUS-SITES.txt
